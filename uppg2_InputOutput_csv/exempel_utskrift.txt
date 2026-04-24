@@ -1,0 +1,40 @@
+
+Välkommen till glos programmet!
+1: Visa Gloslista
+2: Kör testet
+3: Avsluta?
+1
+våga                uskaltaa
+erbjuda             tarjota
+talesätt            sanonta
+utseende            ulkonäkö
+sinne               mieli
+näringstillskott    lisäravinne
+prestationskrav     suorituspaine
+skadlig             haitallinen
+kropp               keho
+skyddsnät           turvaverkko
+riskbeteende        riskikäyttäytyminen
+beskriva            kuvata
+balanserad          tasapainoinen
+kroppsbild          kehonkuva
+uppleva             kokea
+Välkommen till glos programmet!
+1: Visa Gloslista
+2: Kör testet
+3: Avsluta?
+2
+Välkommen till ditt glosförhör, skriv 'exit' för tt avsluta när som helst
+skyddsnät: keho
+keho is wrong, -1 point
+skadlig: haitallinen
+skyddsnät: turvaverkko
+kropp: keho
+prestationskrav: exit
+The test is done, your points: 2, wrong answers: skyddsnät,
+Välkommen till glos programmet!
+1: Visa Gloslista
+2: Kör testet
+3: Avsluta?
+3
+Bye Bye!
