@@ -1,24 +1,37 @@
-# Ditt namn
-# Din klass
-# Datum
+# Gergoose
+# TEI23A
+# 05/15/2026
 
-# Skapa ett program som lägger till information till en annan fil och visar texten
-# Din kod nedan.
 
-# TODO Skapa en valfri klass, eller använd en sen innan, som har minst 3 attribut. Skapa därefter ett klassobjekt.
-class ClassName:
-    def __init__(selfl) -> None:
-        pass
+class Character: # klass med olika objekt med attributen name, house och planet. 
+    def __init__(self, name: str, house: str, planet: str) -> None: # 
+        self.name = name
+        self.house = house 
+        self.planet = planet
 
     def __str__(self) -> str:
-        return f""
+        return f"Character: {self.name}, House:{self.house} Planet: {self.planet}"
 
-def writeToFile(info) -> None:
-    # TODO: Denna funktion ska ta in info från klassobjekt, öppna upp en fil och skriva in info till filen
-    pass
 
-def main():
-    # TODO: Här skapar du ditt klassobjekt och kallar på funktionen writeToFile()
-    object = "Skapa ditt klassobjekt"
+    def writeFile(info) -> None: 
+        filePath = "uppg1_InputOutput_txt/SavedCharacter.txt"
 
-main()
+        try: 
+            with open(filePath, "a", encoding="utf-8") as file:
+                file.write(str(info) + "\n")
+
+            print("Informationen har sparats")
+
+        except Exception as e:
+            print(f"Ett fel uppstod: {e}")
+
+    def main():
+        character_object = Character("Paul Atreides", "House Atreides", "Caladan")
+
+        WriteToFile(character_object)
+
+
+    main()
+
+    
+                      

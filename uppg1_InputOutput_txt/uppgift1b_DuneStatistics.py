@@ -1,6 +1,6 @@
-# Ditt namn
-# Din klass
-# Datum
+# Gergoose
+# TEI23A
+# 05/15/2026
 
 # Statistik
 # Skriv ett program som räknar antal bokstäver i filen DuneSummaryCH1.txt
@@ -8,7 +8,7 @@
 
 statistics = {}
 alfabet = "abcdefghijklmnopqrstuvwxyz"
-filePath = "Programmering2-Module2-Template/uppg1_InputOutput_txt/DuneSummaryCH1.txt"
+filePath = "uppg1_InputOutput_txt/DuneSummaryCH1.txt"
 
 # statistik["a"] = 0, lagra 0 med a som nyckel i dictionary
 for letter in alfabet:
@@ -17,4 +17,14 @@ for letter in alfabet:
 
 # TODO: DIN KOD HÄR
 
-print(statistics)
+try: 
+    with open(filePath, "r", encoding="utf-8") as file: 
+
+        text = file.read().lower()
+
+        for chart in text: 
+            if chat in statistics: 
+                statistics[chat] += 1
+
+except FileNotFoundError: 
+    print(f"Filen hittades inte")
